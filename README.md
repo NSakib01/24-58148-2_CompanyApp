@@ -1,4 +1,4 @@
-# 24-58158-2_CompanyApp
+# 24-58148-2_CompanyApp
 
 **Course:** Object-Oriented Programming 2 - Lab 2  
 **Student:** MD. Nazmus Sakib  
@@ -24,7 +24,7 @@ tables, connected through `Emp_details.CreatedBy` and `Users.UserID`.
 
 | Before the merge | After the merge |
 | --- | --- |
-| Login-and-Register: separate Windows Forms executable | One executable: `24-58158-2_CompanyApp.exe` |
+| Login-and-Register: separate Windows Forms executable | One executable: `24-58148-2_CompanyApp.exe` |
 | Login data stored in an Access file under `bin/Debug` | Login data stored in `dbCompanyApp.dbo.Users` |
 | EmployeeDetails: separate Windows Forms executable | Employee management opens through the authenticated Dashboard |
 | Employee data stored in its own SQL Server database | Employees stored in `dbCompanyApp.dbo.Emp_details` |
@@ -183,8 +183,8 @@ existing Login, Registration, and employee interfaces were not rebuilt.
 
 ### `User.cs`
 
-[`User.cs`](24-58158-2_CompanyApp/User.cs) follows the same structure as the
-original [`Employee.cs`](24-58158-2_CompanyApp/Employee.cs): each operation
+[`User.cs`](24-58148-2_CompanyApp/User.cs) follows the same structure as the
+original [`Employee.cs`](24-58148-2_CompanyApp/Employee.cs): each operation
 opens a `SqlConnection` inside a `using` block, creates a parameterized
 `SqlCommand`, and disposes both objects reliably.
 
@@ -199,7 +199,7 @@ and every attempt uses a fresh, properly disposed connection.
 
 ### `Session.cs`
 
-[`Session.cs`](24-58158-2_CompanyApp/Session.cs) stores the authenticated
+[`Session.cs`](24-58148-2_CompanyApp/Session.cs) stores the authenticated
 `UserID` and `Username`. Login initializes both values, the Dashboard displays
 the current account, employee creation stores the ID in `CreatedBy`, and logout
 calls `Session.Clear()` before presenting a fresh Login form.
@@ -216,7 +216,7 @@ existing form layouts were retained.
 ## One connection string
 
 There is exactly one configured database connection: the `connString` entry in
-[`App.config`](24-58158-2_CompanyApp/App.config). Both `User.cs` and
+[`App.config`](24-58148-2_CompanyApp/App.config). Both `User.cs` and
 `Employee.cs` retrieve it through:
 
 ```csharp
@@ -312,7 +312,7 @@ maintain and considerably less likely to lose or contradict its data.
 
 ### Bonus 1: SHA-256 password hashing
 
-[`PasswordHelper.cs`](24-58158-2_CompanyApp/PasswordHelper.cs) hashes passwords
+[`PasswordHelper.cs`](24-58148-2_CompanyApp/PasswordHelper.cs) hashes passwords
 before registration and authentication. The migration script hashes historical
 plaintext values with SQL Server `HASHBYTES`. Both implementations use the same
 UTF-16LE representation so migrated users can log in successfully.
@@ -327,8 +327,8 @@ Yes/No confirmation before its parameterized `DELETE` executes.
 ## Solution structure
 
 ```text
-24-58158-2_CompanyApp/
-|-- 24-58158-2_CompanyApp.sln
+24-58148-2_CompanyApp/
+|-- 24-58148-2_CompanyApp.sln
 |-- Schema.sql
 |-- Migration.sql
 |-- README.md
@@ -338,8 +338,8 @@ Yes/No confirmation before its parameterized `DELETE` executes.
 |-- .gitignore
 |-- Screenshots/
 |   `-- README.md
-`-- 24-58158-2_CompanyApp/
-    |-- 24-58158-2_CompanyApp.csproj
+`-- 24-58148-2_CompanyApp/
+    |-- 24-58148-2_CompanyApp.csproj
     |-- App.config
     |-- Program.cs
     |-- Employee.cs
