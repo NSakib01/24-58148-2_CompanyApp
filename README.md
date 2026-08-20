@@ -3,14 +3,13 @@
 **Course:** Object-Oriented Programming 2 - Lab 2  
 **Student:** MD. Nazmus Sakib  
 **Student ID:** 24-58158-2  
-**Framework:** .NET Framework 4.8 / Windows Forms  
 **Database:** SQL Server LocalDB, `dbCompanyApp`  
 **Repository:** `24-58158-2_CompanyApp`
 
 ## Project overview
 
-This submission merges the existing **Login-and-Register** and **EmployeeDetails**
-applications into one Windows Forms project. The original employee project was
+This submission merges the existing **Login-and-Register-Master** and **EmployeeDetails (CRUD)**
+applications into one Windows Forms project. The original CRUD project was
 retained as the host; its employee layout, CRUD controls, data-access structure,
 and original root namespace were preserved. The existing Login and Registration
 interfaces were imported into that host, their authentication was migrated from
@@ -353,94 +352,41 @@ Yes/No confirmation before its parameterized `DELETE` executes.
     `-- frmEmployee.cs / frmEmployee.Designer.cs / frmEmployee.resx
 ```
 
-## Build and run
 
-1. Install Visual Studio with the **.NET desktop development** workload and
-   .NET Framework 4.8 targeting support.
-2. Ensure SQL Server LocalDB is installed and its `MSSQLLocalDB` instance is
-   available.
-3. Open SQL Server Object Explorer or SQL Server Management Studio.
-4. Execute [`Schema.sql`](Schema.sql).
-5. Execute [`Migration.sql`](Migration.sql).
-6. Open [`24-58158-2_CompanyApp.sln`](24-58158-2_CompanyApp.sln).
-7. Select **Build > Rebuild Solution**.
-8. Start the application and log in using a migrated account. If no historical
-   account was available, the fallback test account is:
 
-   ```text
-   Username: AdminTest
-   Password: 1234
-   ```
-
-9. Open Dashboard, choose **Manage Employees**, add an employee, and verify that
-   the grid displays your username under `CreatedBy`.
-10. Return to Dashboard, confirm logout, and verify that a cleared Login form
-    appears.
-
-## Required screenshots
-
-Capture real screenshots after running the project on Windows. Save them under
-`Screenshots/` with the exact filenames below.
 
 ### Unified database and both tables
 
-![Screenshot placeholder: unified database and both tables](Screenshots/01_unified_database.png)
+![Unified database and both tables](Screenshots/picturesOfTheProject00001.png)
 
 ### Migrated user accounts
 
-![Screenshot placeholder: migrated Users table](Screenshots/02_migrated_users.png)
+![Migrated Users table](Screenshots/picturesOfTheProject00002.png)
 
 ### Single project and nested form files
 
-![Screenshot placeholder: Solution Explorer and nested form files](Screenshots/03_solution_explorer.png)
+![Solution Explorer and nested form files](Screenshots/picturesOfTheProject00003.png)
 
 ### Login screen
 
-![Screenshot placeholder: Login screen](Screenshots/04_login.png)
+![Login screen](Screenshots/picturesOfTheProject00004.png)
 
 ### Registration screen
 
-![Screenshot placeholder: Registration screen](Screenshots/05_registration.png)
+![Registration screen](Screenshots/picturesOfTheProject00005.png)
 
 ### Authenticated Dashboard
 
-![Screenshot placeholder: authenticated Dashboard](Screenshots/06_dashboard.png)
+![Authenticated Dashboard](Screenshots/picturesOfTheProject00006.png)
 
 ### Employee grid showing the creator
 
-![Screenshot placeholder: Employee grid displaying CreatedBy](Screenshots/07_employee_creator.png)
+![Employee grid displaying CreatedBy](Screenshots/picturesOfTheProject00007.png)
 
 ### Logout confirmation and cleared Login
 
-![Screenshot placeholder: Logout confirmation](Screenshots/08_logout.png)
+![Logout confirmation](Screenshots/picturesOfTheProject00008.png)
 
 ### Bonus employee search
 
-![Screenshot placeholder: search and delete confirmation](Screenshots/09_bonus_search.png)
-
-## GitHub submission
-
-Create a repository named exactly:
-
-```text
-24-58158-2_CompanyApp
-```
-
-From the solution root:
-
-```bash
-git init
-git add .
-git commit -m "Merge Login/Register and Employee CRUD into one CompanyApp"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/24-58158-2_CompanyApp.git
-git push -u origin main
-```
-
-The included `.gitignore` excludes build output, Visual Studio caches, local
-settings, and Access databases. Submit the GitHub repository URL together with
-[`Schema.sql`](Schema.sql) and [`Report.pdf`](Report.pdf).
-
-Detailed implementation history is recorded in
-[`MERGE_PROGRESS.md`](MERGE_PROGRESS.md); final verification steps are listed
-in [`SUBMISSION_CHECKLIST.md`](SUBMISSION_CHECKLIST.md).
+![Employee search filtering](Screenshots/picturesOfTheProject00009.png)
