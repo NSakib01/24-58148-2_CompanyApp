@@ -4,7 +4,7 @@
 **Student:** MD. Nazmus Sakib  
 **Student ID:** 24-58148-2  
 **Database:** SQL Server LocalDB, `dbCompanyApp`  
-**Repository:** `24-58158-2_CompanyApp`
+**Repository:** `24-58148-2_CompanyApp`
 
 ## Project overview
 
