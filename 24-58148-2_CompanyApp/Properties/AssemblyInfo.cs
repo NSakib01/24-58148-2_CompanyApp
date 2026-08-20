@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("24-58158-2_CompanyApp")]
+[assembly: AssemblyTitle("24-58148-2_CompanyApp")]
 [assembly: AssemblyDescription("Merged login, registration, dashboard and employee management application")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hewlett-Packard")]
-[assembly: AssemblyProduct("24-58158-2_CompanyApp")]
+[assembly: AssemblyProduct("24-58148-2_CompanyApp")]
 [assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

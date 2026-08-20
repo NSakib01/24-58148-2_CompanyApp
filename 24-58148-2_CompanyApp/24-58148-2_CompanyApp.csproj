@@ -7,7 +7,7 @@
     <ProjectGuid>{15425B78-79BD-4D54-A021-E00C20869FCB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>EmployeeDetails</RootNamespace>
-    <AssemblyName>24-58158-2_CompanyApp</AssemblyName>
+    <AssemblyName>24-58148-2_CompanyApp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

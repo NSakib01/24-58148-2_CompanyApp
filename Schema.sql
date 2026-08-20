@@ -1,7 +1,7 @@
 /*
     Lab 2: Merging Login/Register and Employee CRUD into One App
     Student: MD. Nazmus Sakib
-    Student ID: 24-58158-2
+    Student ID: 24-58148-2
 
     Run this script first against the SQL Server LocalDB instance.
     It is safe to run more than once: existing tables are preserved.
